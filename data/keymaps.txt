@@ -1,0 +1,49 @@
+? : show this menu
+
+# Navigation
+Shift-v             : visual block mode
+Ctrl-s              : search symbol under cursor
+Ctrl-<Arrow>        : navigate through buffers
+<Leader><Leader>    : open previous buffer
+Ctrl-<PageUp/Down>  : navigate through tabs
+
+# Text control
+Ctrl-c              : copy
+Ctrl-v              : paste
+Ctrl-x              : cut
+
+Ctrl-k              : (un)comment
+Ctrl-l              : translate
+Ctrl-w              : toggle wrapping
++/-                 : (in/de)crement value under cursor
+
+# F-keys
+F1                  : save buffer
+F2                  : close buffer
+F3                  : horizontal split
+F4                  : vertical split
+F5                  : N.A.
+F6                  : N.A.
+F7                  : clear highlight
+F8                  : N.A.
+F9                  : show/hide invisible characters
+F10                 : show/hide file explorer
+F11                 : enter/leave limited view mode
+F12                 : enter/leave distraction free mode
+
+# Search
+Ctrl-f              : search files
+Ctrl-g              : grep in files
+Ctrl-Shift-m        : search manpages
+Ctrl-s              : search symbol under cursor
+
+# Others
+Ctrl-b              : git blame
+Ctrl-d              : delete hidden buffers
+Ctrl-t              : open flaoting terminal
+Ctrl-<Space>        : open completion menu
+Alt-k               : Kubernetes
+
+# AI
+Ctrl-h              : Completion from TabbyML
+Ctrl-j              : Accept completion from TabbyML
