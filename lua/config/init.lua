@@ -8,3 +8,6 @@ require("config.interface")
 require("config.keymaps")
 require("config.search")
 require("config.text")
+
+-- Must be after other config files
+require("config.book")

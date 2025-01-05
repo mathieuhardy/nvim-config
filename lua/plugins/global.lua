@@ -41,6 +41,7 @@ return {
 
   -- External tool installer
   {
+    enabled = os.getenv("BOOK") ~= "1",
     "williamboman/mason.nvim",
     lazy = false,
     dependencies = {

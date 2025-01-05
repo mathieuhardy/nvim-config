@@ -1,6 +1,7 @@
 return {
   -- Self-hosted AI server
   {
+    enabled = os.getenv("BOOK") ~= "1",
     "TabbyML/vim-tabby",
     lazy = false,
     dependencies = {

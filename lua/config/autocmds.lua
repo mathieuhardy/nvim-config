@@ -1,4 +1,4 @@
-if vim.fn.has("autocmd") then
+if vim.fn.has("autocmd") and os.getenv("BOOK") ~= "1" then
   local GeneralGroup = vim.api.nvim_create_augroup("General settings", { clear = true })
 
   -- Strip white spaces

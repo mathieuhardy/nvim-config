@@ -12,6 +12,7 @@ return {
 
   -- Highlight CSS colors
   {
+    enabled = os.getenv("BOOK") ~= "1",
     "norcalli/nvim-colorizer.lua",
     lazy = false,
     init = function()

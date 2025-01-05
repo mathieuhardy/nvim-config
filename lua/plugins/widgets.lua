@@ -1,6 +1,7 @@
 return {
   -- Filesystem explorer
   {
+    enabled = os.getenv("BOOK") ~= "1",
     "nvim-neo-tree/neo-tree.nvim",
     lazy = false,
     dependencies = {
@@ -68,12 +69,14 @@ return {
 
   -- Terminal
   {
+    enabled = os.getenv("BOOK") ~= "1",
     "numToStr/FTerm.nvim",
     lazy = false,
   },
 
   -- Symbols jump
   {
+    enabled = os.getenv("BOOK") ~= "1",
     "pechorin/any-jump.vim",
     lazy = false,
     init = function()
@@ -102,6 +105,7 @@ return {
 
   -- Startup menu
   {
+    enabled = os.getenv("BOOK") ~= "1",
     "goolord/alpha-nvim",
     lazy = false,
     requires = {
@@ -179,12 +183,14 @@ return {
 
   -- Popup menu for keymaps
   {
+    enabled = os.getenv("BOOK") ~= "1",
     "javiorfo/nvim-popcorn",
     lazy = false,
   },
 
   -- Kubectl
   {
+    enabled = os.getenv("BOOK") ~= "1",
     "ramilito/kubectl.nvim",
     lazy = false,
     opts = {
@@ -197,6 +203,7 @@ return {
 
   -- Notes
   {
+    enabled = os.getenv("BOOK") ~= "1",
     "vimwiki/vimwiki",
     lazy = false,
     init = function()

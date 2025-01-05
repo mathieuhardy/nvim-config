@@ -1,5 +1,6 @@
 require("helpers.array")
 require("helpers.autocmds")
+require("helpers.book")
 require("helpers.git")
 require("helpers.invisible_characters")
 require("helpers.keymaps")
