@@ -97,29 +97,18 @@ return {
 
   -- Buffers bar
   {
-    "akinsho/bufferline.nvim",
-    lazy = false,
-    dependencies = "nvim-tree/nvim-web-devicons",
-    config = function()
-      local bl = require("bufferline")
-
-      bl.setup({
-        options = {
-          mode = "tabs",
-          numbers = "none",
-          indicator = {
-            style = "icon",
-          },
-          show_buffer_icons = true,
-          show_buffer_close_icons = true,
-          show_close_icons = true,
-          show_tab_indicators = true,
-          show_duplicate_prefix = false,
-          sort_by = "tabs",
-          style_preset = bl.style_preset.no_italic,
-        },
-      })
-    end,
+    "crispgm/nvim-tabline",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    opts = {
+      show_index = false,
+      show_modify = true,
+      show_icon = true,
+      modify_indicator = "~",
+      brackets = { "", "" },
+      inactive_tab_max_length = 0,
+    },
   },
 
   -- Close buffers
