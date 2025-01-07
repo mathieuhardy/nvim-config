@@ -6,7 +6,7 @@ default_opts = {
   max_lengths = {
     { length = 100, filetypes = { "rust" } },
   },
-  strip_whitespaces = { "*.c", "*.cpp", "*.h", "*.hpp", "*.lua", "*.py", "*.rs", "*.toml" },
+  strip_whitespaces = { "*.c", "*.cpp", "*.h", "*.hpp", "*.lua", "*.py", "*.rs", "*.sql", "*.toml" },
   tab_sizes = {
     c = 4,
     cpp = 4,

@@ -76,6 +76,17 @@ if os.getenv("BOOK") ~= "1" then
   remap("i", "<C-Space>", "<ESC><CMD>lua require('blink.cmp').show()<CR>a", "Show completion menu")
   remap("v", "<C-Space>", "<ESC><CMD>lua require('blink.cmp').show()<CR>", "Show completion menu")
 
+  -- ctrl-<PageUp/PageDown>: Previous/Next tab
+  remap("n", "<C-PageUp>", "gT", "Previous tab")
+  remap("i", "<C-PageUp>", "<ESC>gT", "Previous tab")
+  remap("v", "<C-PageUp>", "<ESC>gT", "Previous tab")
+
+  remap("n", "<C-PageDown>", "gt", "Next tab")
+  remap("i", "<C-PageDown>", "<ESC>gt", "Next tab")
+  remap("v", "<C-PageDown>", "<ESC>gt", "Next tab")
+end
+
+if os.getenv("BOOK") ~= "1" then
   -- ctrl-b: git blame
   remap("", "<C-b>", "<CMD>lua toggle_git_blame()<CR>", "Git blame")
 
