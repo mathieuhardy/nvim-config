@@ -45,7 +45,3 @@ Ctrl-t              : open flaoting terminal
 Ctrl-<Space>        : open completion menu
 Alt-k               : Kubernetes
 Ctrl-o              : sort lines
-
-# AI
-Ctrl-h              : Completion from TabbyML
-Ctrl-j              : Accept completion from TabbyML
