@@ -19,7 +19,7 @@ function toggle_keymaps()
   else
     local opts = {
       width = 80,
-      height = 50,
+      height = 51,
       border = require("popcorn.borders").rounded_corners_border,
       title = { "Keymaps", "Type" },
       content = vim.fn.stdpath("config") .. "/data/keymaps.txt",
