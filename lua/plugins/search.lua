@@ -7,6 +7,12 @@ return {
     },
     opts = {
       defaults = {
+        layout_strategy = "vertical",
+        layout_config = {
+          vertical = {
+            width = 0.9,
+          },
+        },
         mappings = {
           i = {
             ["<F3>"] = "select_horizontal",
