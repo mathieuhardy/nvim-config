@@ -202,9 +202,9 @@ else
   --------------------------------------------------------------------------------
 
   -- ctrl-f: find files
-  remap("n", "<C-f>", "<CMD>lua book_find_files()<CR>", "Find files")
-  remap("i", "<C-f>", "<ESC><CMD>lua book_find_files<CR>", "Find files")
-  remap("v", "<C-f>", "<ESC><CMD>lua book_find_files<CR>", "Find files")
+  remap("n", "<C-f>", "<CMD>lua require('telescope.builtin').find_files()<CR>", "Find files")
+  remap("i", "<C-f>", "<ESC><CMD>lua require('telescope.builtin').find_files()<CR>", "Find files")
+  remap("v", "<C-f>", "<ESC><CMD>lua require('telescope.builtin').find_files()<CR>", "Find files")
 
   --------------------------------------------------------------------------------
   -- F-keys
@@ -216,9 +216,9 @@ else
   remap("v", "<F1>", "<ESC>:w<CR>", "Save")
 
   -- F2: close
-  remap("n", "<F2>", ":q<CR>", "Close")
-  remap("i", "<F2>", "<ESC>:q<CR>", "Close")
-  remap("v", "<F2>", "<ESC>:q<CR>", "Close")
+  remap("n", "<F2>", "<CMD>lua require('zen-mode').close()<CR>:q<CR>", "Close")
+  remap("i", "<F2>", "<ESC><CMD>lua require('zen-mode').close()<CR>:q<CR>", "Close")
+  remap("v", "<F2>", "<ESC><CMD>lua require('zen-mode').close()<CR>:q<CR>", "Close")
 
   -- F7: no highlight
   remap("n", "<F7>", ":nohlsearch<CR>", "No highlight")

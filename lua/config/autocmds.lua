@@ -46,4 +46,20 @@ if vim.fn.has("autocmd") and os.getenv("BOOK") ~= "1" then
       end,
     })
   end
+else
+  vim.api.nvim_create_autocmd({ "VimEnter" }, {
+    pattern = "*",
+    callback = function()
+      require("telescope.builtin").find_files()
+    end,
+  })
+
+  vim.api.nvim_create_autocmd({ "BufReadPost" }, {
+    pattern = "*",
+    callback = function()
+      require("zen-mode").open()
+      vim.cmd("Limelight!")
+      vim.cmd("Limelight!!")
+    end,
+  })
 end
