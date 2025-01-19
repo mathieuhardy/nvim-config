@@ -1,6 +1,5 @@
 if os.getenv("BOOK") == "1" then
   -- Wrapping
-  vim.o.textwidth = 80
   vim.o.wrap = true
   vim.o.linebreak = true
   vim.o.list = false

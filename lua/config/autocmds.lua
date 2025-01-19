@@ -57,7 +57,11 @@ else
   vim.api.nvim_create_autocmd({ "BufReadPost" }, {
     pattern = "*",
     callback = function()
-      require("zen-mode").open()
+      require("zen-mode").open({
+        window = {
+          width = 80,
+        },
+      })
       vim.cmd("Limelight!")
       vim.cmd("Limelight!!")
     end,
