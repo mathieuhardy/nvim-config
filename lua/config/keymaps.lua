@@ -179,6 +179,24 @@ if os.getenv("BOOK") ~= "1" then
   remap("v", "<F12>", "<ESC>:ZenMode<CR>", "Distraction free mode")
 else
   --------------------------------------------------------------------------------
+  -- Text control
+  --------------------------------------------------------------------------------
+
+  -- shift-v: visual block mode
+  remap("", "<S-v>", "<C-v>", "Visual block mode")
+
+  -- ctrl-x: cut
+  remap("v", "<C-x>", '"+x', "Cut")
+
+  -- ctrl-c: copy
+  remap("", "<C-c>", '"+y', "Copy")
+
+  -- ctrl-v: paste
+  remap("n", "<C-v>", '"+gp', "Paste")
+  remap("i", "<C-v>", '<ESC>"+gpa', "Paste")
+  remap("v", "<C-v>", '"+gp', "Paste")
+
+  --------------------------------------------------------------------------------
   -- Spelling
   --------------------------------------------------------------------------------
 
