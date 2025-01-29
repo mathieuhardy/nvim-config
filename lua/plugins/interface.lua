@@ -132,4 +132,23 @@ return {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
+
+  -- Highlight CSS colors
+  {
+    enabled = os.getenv("BOOK") ~= "1",
+    "norcalli/nvim-colorizer.lua",
+    lazy = false,
+    init = function()
+      vim.opt.termguicolors = true
+    end,
+    config = function()
+      require("colorizer").setup()
+    end,
+  },
+
+  -- Markdown highlighting
+  {
+    "OXY2DEV/markview.nvim",
+    lazy = false,
+  },
 }
