@@ -126,10 +126,10 @@ return {
     lazy = false,
   },
 
-  -- Navigate through buffers
+  -- Navigate through buffers and resize buffers
   {
     enabled = os.getenv("BOOK") ~= "1",
-    "christoomey/vim-tmux-navigator",
+    "mrjones2014/smart-splits.nvim",
     lazy = false,
   },
 

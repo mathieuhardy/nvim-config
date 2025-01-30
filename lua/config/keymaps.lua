@@ -4,7 +4,7 @@ if os.getenv("BOOK") ~= "1" then
   remap("v", "?", "<CMD>lua toggle_keymaps()<CR>")
 
   --------------------------------------------------------------------------------
-  -- Navigation
+  -- Navigation/resizing
   --------------------------------------------------------------------------------
 
   -- ctrl-<PageUp/PageDown>: Previous/Next tab
@@ -16,11 +16,27 @@ if os.getenv("BOOK") ~= "1" then
   remap("i", "<C-PageDown>", "<ESC>gt", "Next tab")
   remap("v", "<C-PageDown>", "<ESC>gt", "Next tab")
 
+  -- Resize buffers
+  remap("", "<C-S-Left>", "<CMD>lua require('smart-splits').resize_left(1)<CR>", "Resize left")
+  remap("", "<C-S-Right>", "<CMD>lua require('smart-splits').resize_right(1)<CR>", "Resize right")
+  remap("", "<C-S-Up>", "<CMD>lua require('smart-splits').resize_up(1)<CR>", "Resize up")
+  remap("", "<C-S-Down>", "<CMD>lua require('smart-splits').resize_down(1)<CR>", "Resize down")
+
+  remap("", "<C-S-Left>", "<ESC><CMD>lua require('smart-splits').resize_left(1)<CR>", "Resize left")
+  remap("", "<C-S-Right>", "<ESC><CMD>lua require('smart-splits').resize_right(1)<CR>", "Resize right")
+  remap("", "<C-S-Up>", "<ESC><CMD>lua require('smart-splits').resize_up(1)<CR>", "Resize up")
+  remap("", "<C-S-Down>", "<ESC><CMD>lua require('smart-splits').resize_down(1)<CR>", "Resize down")
+
+  remap("v", "<C-S-Left>", "<ESC><CMD>lua require('smart-splits').resize_left(1)<CR>", "Resize left")
+  remap("v", "<C-S-Right>", "<ESC><CMD>lua require('smart-splits').resize_right(1)<CR>", "Resize right")
+  remap("v", "<C-S-Up>", "<ESC><CMD>lua require('smart-splits').resize_up(1)<CR>", "Resize up")
+  remap("v", "<C-S-Down>", "<ESC><CMD>lua require('smart-splits').resize_down(1)<CR>", "Resize down")
+
   -- Navigate through buffers
-  remap("", "<C-Up>", "<CMD>TmuxNavigateUp<CR>", "Go up")
-  remap("", "<C-Down>", "<CMD>TmuxNavigateDown<CR>", "Go down")
-  remap("", "<C-Left>", "<CMD>TmuxNavigateLeft<CR>", "Go left")
-  remap("", "<C-Right>", "<CMD>TmuxNavigateRight<CR>", "Go right")
+  remap("n", "<C-Up>", "<CMD>lua require('smart-splits').move_cursor_up({at_edge = 'stop'})<CR>", "Go up")
+  remap("n", "<C-Down>", "<CMD>lua require('smart-splits').move_cursor_down({at_edge = 'stop'})<CR>", "Go down")
+  remap("n", "<C-Left>", "<CMD>lua require('smart-splits').move_cursor_left({at_edge = 'stop'})<CR>", "Go left")
+  remap("n", "<C-Right>", "<CMD>lua require('smart-splits').move_cursor_right({at_edge = 'stop'})<CR>", "Go right")
 
   -- ,,: open previous file
   remap("n", "<Leader><Leader>", ":e#<CR>", "Previous file")
