@@ -4,6 +4,11 @@ return {
     enabled = os.getenv("BOOK") ~= "1",
     "numToStr/Comment.nvim",
     lazy = false,
+    config = function()
+      require("Comment").setup()
+
+      require("Comment.ft").set("sql", "--%s")
+    end,
   },
 
   -- Autopair
