@@ -151,4 +151,10 @@ return {
     "OXY2DEV/markview.nvim",
     lazy = false,
   },
+
+  -- Colors in help documentations
+  {
+    "OXY2DEV/helpview.nvim",
+    lazy = false,
+  },
 }
