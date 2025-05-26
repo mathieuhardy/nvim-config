@@ -51,19 +51,25 @@ else
     pattern = "*",
     callback = function()
       require("telescope.builtin").find_files()
+
+      vim.api.nvim_exec(
+        [[
+          augroup Statusline
+            au!
+            au WinEnter,BufEnter * setlocal statusline=%!v:lua.Statusline.show()
+            au WinLeave,BufLeave * setlocal statusline=%!v:lua.Statusline.show()
+            au WinEnter,BufEnter,FileType NvimTree setlocal statusline=%!v:lua.Statusline.show()
+          augroup END
+        ]],
+        false
+      )
     end,
   })
 
   vim.api.nvim_create_autocmd({ "BufReadPost" }, {
     pattern = "*",
     callback = function()
-      require("zen-mode").open({
-        window = {
-          width = 80,
-        },
-      })
-      vim.cmd("Limelight!")
-      vim.cmd("Limelight!!")
+      enable_book_view()
     end,
   })
 end
