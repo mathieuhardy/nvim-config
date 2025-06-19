@@ -1,7 +1,7 @@
 function enable_book_view()
   require("zen-mode").open({
     window = {
-      width = 80,
+      width = 100,
       options = {
         signcolumn = "no",
         number = false,
