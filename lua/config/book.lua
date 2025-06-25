@@ -7,7 +7,7 @@ if os.getenv("BOOK") == "1" then
   -- Wrapping
   vim.o.wrap = true
   vim.o.linebreak = true
-  vim.o.list = false
+  vim.o.list = true
   vim.o.wrapmargin = 1
 
   -- Spelling

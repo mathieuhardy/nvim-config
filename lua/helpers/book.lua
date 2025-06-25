@@ -9,7 +9,7 @@ function enable_book_view()
         cursorline = false,
         cursorcolumn = false,
         foldcolumn = "0",
-        list = false,
+        list = true,
       },
     },
     plugins = {
