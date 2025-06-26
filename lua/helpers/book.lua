@@ -26,8 +26,8 @@ function enable_book_view()
     },
   })
 
-  vim.cmd("Limelight!")
-  vim.cmd("Limelight!! 0.85")
+  -- vim.cmd("Limelight!")
+  -- vim.cmd("Limelight!! 0.85")
 end
 
 Statusline = {}

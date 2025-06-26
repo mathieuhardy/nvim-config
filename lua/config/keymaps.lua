@@ -259,11 +259,6 @@ else
   remap("i", "<F7>", "<ESC>:nohlsearch<CR>a", "No highlight")
   remap("v", "<F7>", "<ESC>:nohlsearch<CR>", "No highlight")
 
-  -- F9: toggle invisible chars
-  remap("n", "<F9>", "<CMD>lua toggle_invisible_chars()<CR>", "Show invisible characters")
-  remap("i", "<F9>", "<ESC><CMD>lua toggle_invisible_chars()<CR>a", "Show invisible characters")
-  remap("v", "<F9>", "<ESC><CMD>lua toggle_invisible_chars()<CR>", "Show invisible characters")
-
   -- F11: limited view mode
   remap("n", "<F11>", ":Limelight!!<CR>", "Limited view mode")
   remap("i", "<F11>", "<ESC>:Limelight!!<CR>a", "Limited view mode")
