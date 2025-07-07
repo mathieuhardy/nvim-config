@@ -75,4 +75,10 @@ return {
       })
     end,
   },
+
+  -- Slint support
+  {
+    "slint-ui/vim-slint",
+    lazy = false,
+  },
 }
