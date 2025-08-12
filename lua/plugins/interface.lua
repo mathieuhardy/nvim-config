@@ -62,7 +62,7 @@ return {
 
   -- Distraction free mode
   {
-    "folke/zen-mode.nvim",
+    "mathieuhardy/zen-mode.nvim",
     lazy = false,
     opts = {
       window = {
