@@ -26,6 +26,7 @@ return {
           "python",
           "rust",
           "sql",
+          "svelte",
           "terraform",
           "toml",
           "typescript",
