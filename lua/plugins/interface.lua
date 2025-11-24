@@ -1,7 +1,7 @@
 return {
   -- Status line
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "nvim-lualine/lualine.nvim",
     dependencies = {
       "nvim-tree/nvim-web-devicons",
@@ -31,7 +31,7 @@ return {
 
   -- Scrollbar
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "dstein64/nvim-scrollview",
     lazy = false,
     config = function()
@@ -41,7 +41,7 @@ return {
 
   -- Indent guides
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "lukas-reineke/indent-blankline.nvim",
     lazy = false,
     main = "ibl",
@@ -99,7 +99,7 @@ return {
 
   -- Highlight word under cursor
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "itchyny/vim-cursorword",
     lazy = false,
   },
@@ -122,21 +122,21 @@ return {
 
   -- Close buffers
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "kazhala/close-buffers.nvim",
     lazy = false,
   },
 
   -- Navigate through buffers and resize buffers
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "mrjones2014/smart-splits.nvim",
     lazy = false,
   },
 
   -- Highlight CSS colors
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "norcalli/nvim-colorizer.lua",
     lazy = false,
     init = function()

@@ -1,6 +1,6 @@
 return {
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "stevearc/conform.nvim",
     lazy = false,
     config = function()

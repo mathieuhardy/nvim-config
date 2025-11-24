@@ -1,6 +1,7 @@
 return {
   -- Tree parser
   {
+    enabled = true,
     "nvim-treesitter/nvim-treesitter",
     lazy = false,
     build = function()
@@ -45,7 +46,7 @@ return {
 
   -- External tool installer
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "williamboman/mason.nvim",
     lazy = false,
     dependencies = {
@@ -79,6 +80,7 @@ return {
 
   -- Slint support
   {
+    enabled = true,
     "slint-ui/vim-slint",
     lazy = false,
   },

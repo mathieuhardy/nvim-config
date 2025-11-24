@@ -1,4 +1,4 @@
-if vim.fn.has("autocmd") and os.getenv("BOOK") ~= "1" then
+if vim.fn.has("autocmd") then
   local GeneralGroup = vim.api.nvim_create_augroup("General settings", { clear = true })
 
   -- Strip white spaces
@@ -46,30 +46,4 @@ if vim.fn.has("autocmd") and os.getenv("BOOK") ~= "1" then
       end,
     })
   end
-else
-  vim.api.nvim_create_autocmd({ "VimEnter" }, {
-    pattern = "*",
-    callback = function()
-      require("telescope.builtin").find_files()
-
-      vim.api.nvim_exec(
-        [[
-          augroup Statusline
-            au!
-            au WinEnter,BufEnter * setlocal statusline=%!v:lua.Statusline.show()
-            au WinLeave,BufLeave * setlocal statusline=%!v:lua.Statusline.show()
-            au WinEnter,BufEnter,FileType NvimTree setlocal statusline=%!v:lua.Statusline.show()
-          augroup END
-        ]],
-        false
-      )
-    end,
-  })
-
-  vim.api.nvim_create_autocmd({ "BufReadPost" }, {
-    pattern = "*",
-    callback = function()
-      enable_book_view()
-    end,
-  })
 end

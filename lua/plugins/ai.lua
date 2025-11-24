@@ -1,7 +1,7 @@
 return {
   -- Copilot
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "github/copilot.vim",
     lazy = false,
   },

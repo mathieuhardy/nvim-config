@@ -1,7 +1,7 @@
 return {
   -- Auto-complete
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "hrsh7th/nvim-cmp",
     lazy = false,
     dependencies = {
@@ -71,7 +71,7 @@ return {
 
   -- nvim-cmp source used to fetch Rust crates
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "saecki/crates.nvim",
     tag = "stable",
     config = function()

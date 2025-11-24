@@ -1,7 +1,7 @@
 return {
   -- Commenter
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "numToStr/Comment.nvim",
     lazy = false,
     config = function()
@@ -13,7 +13,7 @@ return {
 
   -- Autopair
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "windwp/nvim-autopairs",
     lazy = false,
     event = "InsertEnter",
@@ -22,28 +22,28 @@ return {
 
   -- Open file at position
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "vim-scripts/file-line",
     lazy = false,
   },
 
   -- Increment/decrement
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "qwertologe/nextval.vim",
     lazy = false,
   },
 
   -- Remove trailing whitespaces
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "ntpeters/vim-better-whitespace",
     lazy = false,
   },
 
   -- Traduction
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "potamides/pantran.nvim",
     lazy = false,
     config = function()

@@ -1,6 +1,6 @@
 return {
   {
-    enabled = os.getenv("BOOK") ~= "1",
+    enabled = true,
     "tpope/vim-fugitive",
     lazy = false,
   },
