@@ -77,11 +77,4 @@ return {
       })
     end,
   },
-
-  -- Slint support
-  {
-    enabled = true,
-    "slint-ui/vim-slint",
-    lazy = false,
-  },
 }
