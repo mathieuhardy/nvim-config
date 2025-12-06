@@ -192,3 +192,15 @@ remap("v", "<F11>", "<ESC>:Limelight!!<CR>", "Limited view mode")
 remap("n", "<F12>", ":ZenMode<CR>", "Distraction free mode")
 remap("i", "<F12>", "<ESC>:ZenMode<CR>a", "Distraction free mode")
 remap("v", "<F12>", "<ESC>:ZenMode<CR>", "Distraction free mode")
+
+--------------------------------------------------------------------------------
+-- Mouse
+--------------------------------------------------------------------------------
+
+remap("n", "<C-LeftMouse>", ":Telescope lsp_definitions<CR>", "Jump to declaration")
+remap("i", "<C-LeftMouse>", "<ESC>:Telescope lsp_definitions<CR>a", "Jump to declaration")
+remap("v", "<C-LeftMouse>", "<ESC>:Telescope lsp_definitions<CR>", "Jump to declaration")
+
+remap("n", "<C-RightMouse>", ":Telescope lsp_references<CR>", "References")
+remap("i", "<C-RightMouse>", "<ESC>:Telescope lsp_references<CR>a", "References")
+remap("v", "<C-RightMouse>", "<ESC>:Telescope lsp_references<CR>", "References")
