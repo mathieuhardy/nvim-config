@@ -66,13 +66,16 @@ return {
 
       -- require("lspconfig").rust_analyzer.setup({})
 
-      -- Formatters
+      -- Tools
       require("mason-tool-installer").setup({
         ensure_installed = {
+          -- Formaters
           "black",
           "isort",
           "rustfmt",
           "stylua",
+          -- Debugger
+          "codelldb",
         },
       })
     end,

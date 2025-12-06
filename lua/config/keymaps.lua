@@ -145,6 +145,15 @@ remap("i", "<A-k>", "<ESC><CMD>lua require('kubectl').toggle()<CR>", "kubernetes
 remap("v", "<A-k>", "<CMD>lua require('kubectl').toggle()<CR>", "kubernetes")
 
 --------------------------------------------------------------------------------
+-- Rust
+--------------------------------------------------------------------------------
+
+-- ctrl-p: Show Rust hover actions (debug, run, etc)
+remap("n", "<C-p>", ":RustLsp hover actions<CR>", "Hover actions")
+remap("i", "<C-p>", "<ESC>:RustLsp hover actions<CR>a", "Hover actions")
+remap("v", "<C-p>", "<ESC>:RustLsp hover actions<CR>", "Hover actions")
+
+--------------------------------------------------------------------------------
 -- F-keys
 --------------------------------------------------------------------------------
 
