@@ -101,11 +101,6 @@ remap("n", "<C-g>", "<CMD>lua require('telescope.builtin').live_grep()<CR>", "Gr
 remap("i", "<C-g>", "<ESC><CMD>lua require('telescope.builtin').live_grep()<CR>", "Grep pattern")
 remap("v", "<C-g>", "<ESC><CMD>lua require('telescope.builtin').live_grep()<CR>", "Grep pattern")
 
--- ctrl-shift-m: man pages
-remap("n", "<C-S-m>", "<CMD>lua require('telescope.builtin').man_pages()<CR>", "Grep pattern")
-remap("i", "<C-S-m>", "<ESC><CMD>lua require('telescope.builtin').man_pages()<CR>", "Grep pattern")
-remap("v", "<C-S-m>", "<ESC><CMD>lua require('telescope.builtin').man_pages()<CR>", "Grep pattern")
-
 -- ctrl-s: search symbol under cursor
 remap("n", "<C-s>", "<CMD>AnyJump<CR>", "Jump to definition")
 remap("i", "<C-s>", "<ESC><CMD>AnyJump<CR>", "Jump to definition")
@@ -114,6 +109,11 @@ remap("v", "<C-s>", "<ESC><CMD>AnyJumpVisual<CR>", "Jump to definition")
 --------------------------------------------------------------------------------
 -- Advanced
 --------------------------------------------------------------------------------
+
+-- ctrl-space: autocomplemetion
+remap("n", "<C-Space>", "<CMD>lua require('blink.cmp').show()<CR>a", "Show completion menu")
+remap("i", "<C-Space>", "<ESC><CMD>lua require('blink.cmp').show()<CR>a", "Show completion menu")
+remap("v", "<C-Space>", "<ESC><CMD>lua require('blink.cmp').show()<CR>", "Show completion menu")
 
 -- ctrl-b: git blame
 remap("", "<C-b>", "<CMD>lua toggle_git_blame()<CR>", "Git blame")
@@ -124,29 +124,10 @@ remap("", "<C-d>", "<CMD>lua require('close_buffers').delete({type = 'hidden'})<
 -- ctrl-o: Sort
 remap("v", "<C-o>", ":'<,'> sort<CR>", "Sort")
 
--- ctrl-n: Open notes
-remap("n", "<C-n>", "<CMD>VimwikiIndex<CR>", "Open notes")
-remap("i", "<C-n>", "<ESC><CMD>VimwikiIndex<CR>", "Open notes")
-remap("v", "<C-n>", "<ESC><CMD>VimwikiIndex<CR>", "Open notes")
-
 -- ctrl-t: terminal
 remap("n", "<C-t>", '<CMD>lua require("FTerm").toggle()<CR>', "Open terminal")
 remap("t", "<C-t>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>', "Open terminal")
 remap("t", "<ESC>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>', "Open terminal")
-
--- alt-k: kubernetes
-remap("n", "<A-k>", "<CMD>lua require('kubectl').toggle()<CR>", "kubernetes")
-remap("i", "<A-k>", "<ESC><CMD>lua require('kubectl').toggle()<CR>", "kubernetes")
-remap("v", "<A-k>", "<CMD>lua require('kubectl').toggle()<CR>", "kubernetes")
-
---------------------------------------------------------------------------------
--- Rust
---------------------------------------------------------------------------------
-
--- ctrl-space: Show Rust hover actions (debug, run, etc)
-remap("n", "<C-Space>", ":RustLsp hover actions<CR>", "Hover actions")
-remap("i", "<C-Space>", "<ESC>:RustLsp hover actions<CR>a", "Hover actions")
-remap("v", "<C-Space>", "<ESC>:RustLsp hover actions<CR>", "Hover actions")
 
 -- ctrl-p: Show custom commands
 remap("n", "<C-p>", ":Telescope command_palette<CR>", "Custom commands")

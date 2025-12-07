@@ -21,17 +21,14 @@ Ctrl-w              : toggle wrapping
 # Search
 Ctrl-f              : search files
 Ctrl-g              : grep in files
-Ctrl-Shift-m        : search manpages
 Ctrl-s              : search symbol under cursor
 
 # Advanced
 Ctrl-<Space>        : open completion menu
 Ctrl-b              : git blame
 Ctrl-d              : delete hidden buffers
-Ctrl-n              : open notes
 Ctrl-o              : sort lines
 Ctrl-t              : open floating terminal
-Alt-k               : Kubernetes dashboard
 
 # F-keys
 F1                  : save buffer

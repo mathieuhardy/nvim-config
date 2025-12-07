@@ -188,19 +188,6 @@ return {
     lazy = false,
   },
 
-  -- Kubectl
-  {
-    enabled = true,
-    "ramilito/kubectl.nvim",
-    lazy = false,
-    opts = {
-      auto_refresh = {
-        enabled = true,
-        interval = 1000,
-      },
-    },
-  },
-
   -- Notes
   {
     enabled = true,

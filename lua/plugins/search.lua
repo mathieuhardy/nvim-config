@@ -24,16 +24,19 @@ return {
         },
         extensions = {
           command_palette = {
-            -- {
-            --   "File",
-            --   { "quit (C-q)", ":qa" },
-            --   { "files (C-f)", ":lua require('telescope.builtin').find_files()", 1 },
-            -- },
-            -- {
-            --   "Help",
-            --   { "tips", ":help tips" },
-            --   { "search help(F1)", ":lua require('telescope.builtin').help_tags()", 1 },
-            -- },
+            {
+              "Man pages",
+              { "Search", ":lua require('telescope.builtin').man_pages()" },
+            },
+            {
+              "Notes",
+              { "Open", ":VimwikiIndex" },
+            },
+            {
+              "Rust",
+              { "Actions", ":lua rust_hover_actions()" },
+              { "Run", ":lua rust_runnables()" },
+            },
           },
         },
       })
