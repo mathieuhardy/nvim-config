@@ -115,11 +115,6 @@ remap("v", "<C-s>", "<ESC><CMD>AnyJumpVisual<CR>", "Jump to definition")
 -- Advanced
 --------------------------------------------------------------------------------
 
--- ctrl-space: autocomplemetion
-remap("n", "<C-Space>", "<CMD>lua require('blink.cmp').show()<CR>a", "Show completion menu")
-remap("i", "<C-Space>", "<ESC><CMD>lua require('blink.cmp').show()<CR>a", "Show completion menu")
-remap("v", "<C-Space>", "<ESC><CMD>lua require('blink.cmp').show()<CR>", "Show completion menu")
-
 -- ctrl-b: git blame
 remap("", "<C-b>", "<CMD>lua toggle_git_blame()<CR>", "Git blame")
 
@@ -148,10 +143,15 @@ remap("v", "<A-k>", "<CMD>lua require('kubectl').toggle()<CR>", "kubernetes")
 -- Rust
 --------------------------------------------------------------------------------
 
--- ctrl-p: Show Rust hover actions (debug, run, etc)
-remap("n", "<C-p>", ":RustLsp hover actions<CR>", "Hover actions")
-remap("i", "<C-p>", "<ESC>:RustLsp hover actions<CR>a", "Hover actions")
-remap("v", "<C-p>", "<ESC>:RustLsp hover actions<CR>", "Hover actions")
+-- ctrl-space: Show Rust hover actions (debug, run, etc)
+remap("n", "<C-Space>", ":RustLsp hover actions<CR>", "Hover actions")
+remap("i", "<C-Space>", "<ESC>:RustLsp hover actions<CR>a", "Hover actions")
+remap("v", "<C-Space>", "<ESC>:RustLsp hover actions<CR>", "Hover actions")
+
+-- ctrl-p: Show custom commands
+remap("n", "<C-p>", ":Telescope command_palette<CR>", "Custom commands")
+remap("i", "<C-p>", "<ESC>:Telescope command_palette<CR>a", "Custom commands")
+remap("v", "<C-p>", "<ESC>:Telescope command_palette<CR>", "Custom commands")
 
 --------------------------------------------------------------------------------
 -- F-keys
