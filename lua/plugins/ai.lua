@@ -55,4 +55,30 @@ return {
       })
     end,
   },
+
+  -- Codecompanion (for chatting with mistral)
+  {
+    "olimorris/codecompanion.nvim",
+    enabled = true,
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      interactions = {
+        chat = {
+          adapter = "mistral",
+        },
+        inline = {
+          adapter = "mistral",
+        },
+        cmd = {
+          adapter = "mistral",
+        },
+        background = {
+          adapter = "mistral",
+        },
+      },
+    },
+  },
 }

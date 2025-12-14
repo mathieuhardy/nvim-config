@@ -48,7 +48,7 @@ return {
           { name = "sql" }, -- sql files
           { name = "dotenv" }, -- dotenv
           { name = "crates" }, -- Rust crates
-          { name = "codeium" }, -- AI
+          -- { name = "codeium" }, -- AI
         }),
         performance = {
           -- It is recommended to increase the timeout duration due to

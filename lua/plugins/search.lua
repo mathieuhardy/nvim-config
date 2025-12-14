@@ -26,6 +26,10 @@ return {
         extensions = {
           command_palette = {
             {
+              "AI",
+              { "Chat", ":CodeCompanionChat" },
+            },
+            {
               "Man pages",
               { "Search", ":lua require('telescope.builtin').man_pages()" },
             },
