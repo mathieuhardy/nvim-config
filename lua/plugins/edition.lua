@@ -1,8 +1,8 @@
 return {
   -- Commenter
   {
-    enabled = true,
     "numToStr/Comment.nvim",
+    enabled = true,
     lazy = false,
     config = function()
       require("Comment").setup()
@@ -13,8 +13,8 @@ return {
 
   -- Autopair
   {
-    enabled = true,
     "windwp/nvim-autopairs",
+    enabled = true,
     lazy = false,
     event = "InsertEnter",
     config = true,
@@ -22,29 +22,29 @@ return {
 
   -- Open file at position
   {
-    enabled = true,
     "vim-scripts/file-line",
+    enabled = true,
     lazy = false,
   },
 
   -- Increment/decrement
   {
-    enabled = true,
     "qwertologe/nextval.vim",
+    enabled = true,
     lazy = false,
   },
 
   -- Remove trailing whitespaces
   {
-    enabled = true,
     "ntpeters/vim-better-whitespace",
+    enabled = true,
     lazy = false,
   },
 
   -- Traduction
   {
-    enabled = true,
     "potamides/pantran.nvim",
+    enabled = true,
     lazy = false,
     config = function()
       local actions = require("pantran.ui.actions")

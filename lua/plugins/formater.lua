@@ -1,7 +1,7 @@
 return {
   {
-    enabled = true,
     "stevearc/conform.nvim",
+    enabled = true,
     lazy = false,
     config = function()
       -- Stylua options

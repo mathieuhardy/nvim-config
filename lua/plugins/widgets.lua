@@ -1,8 +1,8 @@
 return {
   -- Filesystem explorer
   {
-    enabled = true,
     "nvim-neo-tree/neo-tree.nvim",
+    enabled = true,
     lazy = false,
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -69,15 +69,15 @@ return {
 
   -- Terminal
   {
-    enabled = true,
     "numToStr/FTerm.nvim",
+    enabled = true,
     lazy = false,
   },
 
   -- Symbols jump
   {
-    enabled = true,
     "pechorin/any-jump.vim",
+    enabled = true,
     lazy = false,
     init = function()
       vim.g.any_jump_list_numbers = 0
@@ -105,8 +105,8 @@ return {
 
   -- Startup menu
   {
-    enabled = true,
     "goolord/alpha-nvim",
+    enabled = true,
     lazy = false,
     requires = {
       "kyazdani42/nvim-web-devicons",
@@ -183,15 +183,15 @@ return {
 
   -- Popup menu for keymaps
   {
-    enabled = true,
     "javiorfo/nvim-popcorn",
+    enabled = true,
     lazy = false,
   },
 
   -- Notes
   {
-    enabled = true,
     "vimwiki/vimwiki",
+    enabled = true,
     lazy = false,
     init = function()
       vim.g.vimwiki_list = {

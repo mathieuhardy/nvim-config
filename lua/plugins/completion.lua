@@ -1,8 +1,8 @@
 return {
   -- Auto-complete
   {
-    enabled = true,
     "hrsh7th/nvim-cmp",
+    enabled = true,
     lazy = false,
     dependencies = {
       "neovim/nvim-lspconfig",
@@ -48,7 +48,15 @@ return {
           { name = "sql" }, -- sql files
           { name = "dotenv" }, -- dotenv
           { name = "crates" }, -- Rust crates
+          { name = "codeium" }, -- AI
         }),
+        performance = {
+          -- It is recommended to increase the timeout duration due to
+          -- the typically slower response speed of LLMs compared to
+          -- other completion sources. This is not needed when you only
+          -- need manual completion.
+          fetching_timeout = 2000,
+        },
       })
 
       cmp.setup.cmdline({ "/", "?" }, {
@@ -71,8 +79,8 @@ return {
 
   -- nvim-cmp source used to fetch Rust crates
   {
-    enabled = true,
     "saecki/crates.nvim",
+    enabled = true,
     tag = "stable",
     config = function()
       require("crates").setup({

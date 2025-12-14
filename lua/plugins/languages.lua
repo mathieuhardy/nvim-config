@@ -1,8 +1,8 @@
 return {
   -- Rust
   {
-    enabled = true,
     "mrcjkb/rustaceanvim",
+    enabled = true,
     lazy = false,
     ft = { rust },
   },

@@ -1,8 +1,8 @@
 return {
   -- Tree parser
   {
-    enabled = true,
     "nvim-treesitter/nvim-treesitter",
+    enabled = true,
     lazy = false,
     build = function()
       require("nvim-treesitter.install").update({ with_sync = true })()

@@ -1,8 +1,8 @@
 return {
   -- Colorshemes
   {
-    enabled = true,
     "sainnhe/sonokai",
+    enabled = true,
     lazy = false,
     init = function()
       vim.g.sonokai_style = "default"
