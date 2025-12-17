@@ -1,7 +1,7 @@
 return {
   {
-    enabled = false,
     "mfussenegger/nvim-dap",
+    enabled = false,
     lazy = false,
   },
 }

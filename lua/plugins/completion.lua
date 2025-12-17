@@ -17,7 +17,7 @@ return {
       "SergioRibera/cmp-dotenv",
     },
     config = function()
-      -- Enable friendly-snippets in luansnip
+      -- Enable friendly-snippets in luasnip
       require("luasnip.loaders.from_vscode").lazy_load()
 
       -- Setup nvim-cmp
@@ -55,7 +55,7 @@ return {
           -- the typically slower response speed of LLMs compared to
           -- other completion sources. This is not needed when you only
           -- need manual completion.
-          fetching_timeout = 2000,
+          -- fetching_timeout = 2000,
         },
       })
 
@@ -81,6 +81,7 @@ return {
   {
     "saecki/crates.nvim",
     enabled = true,
+    lazy = false,
     tag = "stable",
     config = function()
       require("crates").setup({

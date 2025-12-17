@@ -46,25 +46,15 @@ return {
 
   -- External tool installer
   {
-    enabled = true,
     "williamboman/mason.nvim",
+    enabled = true,
     lazy = false,
     dependencies = {
       "WhoIsSethDaniel/mason-tool-installer.nvim",
-      -- "williamboman/mason-lspconfig.nvim",
-      -- "neovim/nvim-lspconfig",
-      -- "simrat39/rust-tools.nvim",
     },
     config = function()
       -- Base
       require("mason").setup()
-
-      -- LSP servers
-      -- require("mason-lspconfig").setup({
-      --   ensure_installed = { "rust_analyzer" },
-      -- })
-
-      -- require("lspconfig").rust_analyzer.setup({})
 
       -- Tools
       require("mason-tool-installer").setup({

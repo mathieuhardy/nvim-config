@@ -28,7 +28,7 @@ return {
           },
         },
         format_on_save = true,
-        lsp_format = "never",
+        lsp_format = "fallback",
         quiet = false,
         stop_after_first = false,
         notify_on_error = true,

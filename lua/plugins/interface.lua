@@ -3,6 +3,7 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     enabled = true,
+    lazy = false,
     dependencies = {
       "nvim-tree/nvim-web-devicons",
     },
@@ -31,8 +32,8 @@ return {
 
   -- Scrollbar
   {
-    enabled = true,
     "dstein64/nvim-scrollview",
+    enabled = true,
     lazy = false,
     config = function()
       vim.g.scrollview_signs_on_startup = {}
@@ -41,8 +42,8 @@ return {
 
   -- Indent guides
   {
-    enabled = true,
     "lukas-reineke/indent-blankline.nvim",
+    enabled = true,
     lazy = false,
     main = "ibl",
     opts = {
@@ -63,6 +64,7 @@ return {
   -- Distraction free mode
   {
     "mathieuhardy/zen-mode.nvim",
+    enabled = true,
     lazy = false,
     opts = {
       window = {
@@ -94,19 +96,22 @@ return {
   -- Limited view
   {
     "junegunn/limelight.vim",
+    enabled = true,
     lazy = false,
   },
 
   -- Highlight word under cursor
   {
-    enabled = true,
     "itchyny/vim-cursorword",
+    enabled = true,
     lazy = false,
   },
 
   -- Buffers bar
   {
     "crispgm/nvim-tabline",
+    enabled = true,
+    lazy = false,
     dependencies = {
       "nvim-tree/nvim-web-devicons",
     },
@@ -122,45 +127,15 @@ return {
 
   -- Close buffers
   {
-    enabled = true,
     "kazhala/close-buffers.nvim",
+    enabled = true,
     lazy = false,
   },
 
   -- Navigate through buffers and resize buffers
   {
-    enabled = true,
     "mrjones2014/smart-splits.nvim",
-    lazy = false,
-  },
-
-  -- Highlight CSS colors
-  {
     enabled = true,
-    "norcalli/nvim-colorizer.lua",
-    lazy = false,
-    init = function()
-      vim.opt.termguicolors = true
-    end,
-    config = function()
-      require("colorizer").setup()
-    end,
-  },
-
-  -- Markdown highlighting
-  {
-    "OXY2DEV/markview.nvim",
-    lazy = false,
-    opts = {
-      experimental = {
-        check_rtp = false,
-      },
-    },
-  },
-
-  -- Colors in help documentations
-  {
-    "OXY2DEV/helpview.nvim",
     lazy = false,
   },
 }
