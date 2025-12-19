@@ -110,11 +110,6 @@ remap("v", "<C-s>", "<ESC><CMD>AnyJumpVisual<CR>", "Jump to definition")
 -- Advanced
 --------------------------------------------------------------------------------
 
--- ctrl-space: autocomplemetion
-remap("n", "<C-Space>", "<CMD>lua require('blink.cmp').show()<CR>a", "Show completion menu")
-remap("i", "<C-Space>", "<ESC><CMD>lua require('blink.cmp').show()<CR>a", "Show completion menu")
-remap("v", "<C-Space>", "<ESC><CMD>lua require('blink.cmp').show()<CR>", "Show completion menu")
-
 -- ctrl-b: git blame
 remap("", "<C-b>", "<CMD>lua toggle_git_blame()<CR>", "Git blame")
 
