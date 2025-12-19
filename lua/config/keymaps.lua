@@ -88,6 +88,15 @@ remap("n", "-", "<Plug>nextvalDec", "Increment/descrement")
 remap("n", "+", "<Plug>nextvalInc", "Increment/descrement")
 
 --------------------------------------------------------------------------------
+-- Interface
+--------------------------------------------------------------------------------
+
+-- ctrl-i: toggle inlay hints
+remap("n", "<C-i>", "<CMD>lua toggle_inlay_hints()<CR>", "Toggle inlay hints")
+remap("i", "<C-i>", "<ESC><CMD>lua toggle_inlay_hints()<CR>a", "Toggle inlay hints")
+remap("v", "<C-i>", "<CMD>lua toggle_inlay_hints()<CR>", "Toggle inlay hints")
+
+--------------------------------------------------------------------------------
 -- Search
 --------------------------------------------------------------------------------
 
