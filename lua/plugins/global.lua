@@ -9,6 +9,17 @@ return {
       require("nvim-treesitter.install").update({ with_sync = true })()
     end,
     config = function()
+      -- External parsers
+      require("nvim-treesitter.parsers").get_parser_configs().mustache = {
+        install_info = {
+          url = "https://github.com/TheLeoP/tree-sitter-mustache",
+          branch = "main",
+          files = { "src/parser.c", "src/scanner.c" },
+        },
+        filetype = "mustache",
+      }
+
+      -- Select languages
       require("nvim-treesitter.configs").setup({
         ensure_installed = {
           "bash",
@@ -18,20 +29,33 @@ return {
           "css",
           "csv",
           "dockerfile",
+          "doxygen",
+          "fish",
+          "git_config",
+          "gitignore",
+          "go",
           "helm",
           "html",
+          "hurl",
           "javascript",
           "json",
           "lua",
+          "make",
           "markdown",
           "markdown_inline",
+          "mustache",
+          "proto",
           "python",
+          "regex",
           "rust",
+          "scss",
           "sql",
+          "ssh_config",
           "svelte",
           "terraform",
           "toml",
           "typescript",
+          "typst",
           "vim",
           "vimdoc",
           "vue",
@@ -63,7 +87,6 @@ return {
           -- Formaters
           "black",
           "isort",
-          "rustfmt",
           "stylua",
           -- Debugger
           "codelldb",

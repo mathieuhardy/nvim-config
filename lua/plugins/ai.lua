@@ -39,7 +39,7 @@ return {
           map_keys = true,
           key_bindings = {
             -- Accept the current completion.
-            accept = "<Tab>",
+            accept = "<S-Tab>",
             -- Accept the next word.
             accept_word = false,
             -- Accept the next line.
