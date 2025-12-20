@@ -33,7 +33,27 @@ return {
             accept_line = false,
           },
         },
+        nes = {
+          enabled = true,
+          keymap = {
+            accept_and_goto = "<leader>p",
+            accept = "<C-y>",
+            dismiss = "<Esc>",
+          },
+        },
+        logger = {
+          print_log_level = vim.log.levels.OFF,
+        },
       })
+    end,
+  },
+
+  {
+    "copilotlsp-nvim/copilot-lsp",
+    enabled = true,
+    lazy = false,
+    config = function()
+      vim.g.copilot_nes_debounce = 500
     end,
   },
 

@@ -9,7 +9,15 @@ function remap(mode, lhs, rhs, desc, opts)
     options = vim.tbl_extend("force", options, opts)
   end
 
-  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+  if type(rhs) == "function" then
+    vim.keymap.set(mode, lhs, rhs, options)
+  else
+    vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+  end
+end
+
+function rmmap(mode, lhs)
+  vim.api.nvim_del_keymap(mode, lhs)
 end
 
 function toggle_keymaps()
