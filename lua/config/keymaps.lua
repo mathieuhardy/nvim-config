@@ -123,7 +123,7 @@ remap("v", "<C-s>", "<ESC><CMD>AnyJumpVisual<CR>", "Jump to definition")
 remap("", "<C-b>", "<CMD>lua toggle_git_blame()<CR>", "Git blame")
 
 -- ctrl-d: delete buffers
-remap("", "<C-d>", "<CMD>lua require('close_buffers').delete({type = 'hidden'})<CR>", "Grep pattern")
+remap("", "<C-d>", "<CMD>lua require('close_buffers').delete({type = 'hidden'})<CR>", "Delete closed buffers")
 
 -- ctrl-o: Sort
 remap("v", "<C-o>", ":'<,'> sort<CR>", "Sort")
