@@ -22,7 +22,7 @@ return {
 
   -- Open file at position
   {
-    "vim-scripts/file-line",
+    "mathieuhardy/file-line",
     enabled = true,
     lazy = false,
   },
