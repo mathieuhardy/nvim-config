@@ -28,6 +28,9 @@ return {
             {
               "AI",
               { "Chat", ":CodeCompanionChat" },
+              { "Suggestions - Codeium", ":lua select_ai_suggestions_backend('codeium')" },
+              { "Suggestions - Copilot", ":lua select_ai_suggestions_backend('copilot')" },
+              { "Suggestions - Disabled", ":lua select_ai_suggestions_backend('')" },
             },
             {
               "Man pages",

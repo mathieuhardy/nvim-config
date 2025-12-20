@@ -31,4 +31,7 @@ default_opts = {
     rust = 4,
     toml = 4,
   },
+  ai = {
+    suggestions_backend = "copilot",
+  },
 }

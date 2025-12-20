@@ -1,9 +1,40 @@
 return {
   -- Copilot
   {
-    "github/copilot.vim",
-    enabled = false,
+    "zbirenbaum/copilot.lua",
+    enabled = true,
     lazy = false,
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({
+        panel = {
+          enabled = true,
+          auto_refresh = true,
+          keymap = {
+            jump_prev = "<Leader>pp",
+            jump_next = "<Leader>nn",
+            accept = "<Leader>aa",
+            refresh = "<Leader>rr",
+            open = "<Leader>oo",
+          },
+          layout = {
+            position = "right",
+            ratio = 0.4,
+          },
+        },
+        suggestion = {
+          enabled = true,
+          auto_trigger = true,
+          hide_during_completion = false,
+          keymap = {
+            accept = "<S-Tab>",
+            accept_word = false,
+            accept_line = false,
+          },
+        },
+      })
+    end,
   },
 
   -- Codeium
