@@ -49,4 +49,13 @@ return {
     enabled = true,
     lazy = false,
   },
+
+  -- Highlight TODO comments
+  {
+    "folke/todo-comments.nvim",
+    enabled = true,
+    lazy = false,
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
+  },
 }
