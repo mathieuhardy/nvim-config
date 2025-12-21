@@ -34,9 +34,6 @@ vim.o.paste = false -- allow indentation during pastes
 vim.o.showmode = false -- because we use lightline plugin
 vim.o.laststatus = 2 -- always show the status line
 
--- Sign column (diagnostics)
-vim.o.signcolumn = "yes"
-
 -- Buffer bar
 --vim.o.guitablabel = '%t'                        -- Only filename in tab bar
 

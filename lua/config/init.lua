@@ -2,6 +2,7 @@
 require("config.lazy")
 
 require("config.autocmds")
+require("config.diagnostics")
 require("config.files")
 require("config.global")
 require("config.interface")

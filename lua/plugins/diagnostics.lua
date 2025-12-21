@@ -1,11 +1,24 @@
 return {
   {
-    "sontungexpt/better-diagnostic-virtual-text",
+    "rachartier/tiny-inline-diagnostic.nvim",
     enabled = true,
     lazy = false,
-    event = "LspAttach",
     config = function()
-      require("better-diagnostic-virtual-text").setup(opts)
+      require("tiny-inline-diagnostic").setup({
+        preset = "classic",
+        options = {
+          add_messages = {
+            display_count = true,
+          },
+          multilines = {
+            enabled = true,
+          },
+          show_source = {
+            enabled = true,
+            if_many = true,
+          },
+        },
+      })
     end,
   },
 }
