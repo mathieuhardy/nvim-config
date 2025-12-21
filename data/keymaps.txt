@@ -37,7 +37,7 @@ F2                  : close buffer
 F3                  : horizontal split
 F4                  : vertical split
 F5                  : toggle inlay hints
-F6                  : N.A.
+F6                  : color picker
 F7                  : clear highlight
 F8                  : N.A.
 F9                  : show/hide invisible characters

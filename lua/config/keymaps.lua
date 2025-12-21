@@ -158,6 +158,11 @@ remap("n", "<F5>", "<CMD>lua toggle_inlay_hints()<CR>", "Toggle inlay hints")
 remap("i", "<F5>", "<ESC><CMD>lua toggle_inlay_hints()<CR>a", "Toggle inlay hints")
 remap("v", "<F5>", "<CMD>lua toggle_inlay_hints()<CR>", "Toggle inlay hints")
 
+-- F6: color picker
+remap("n", "<F6>", "<CMD>Huefy<CR>", "Open color picker")
+remap("i", "<F6>", "<ESC><CMD>Huefy<CR>a", "Open color picker")
+remap("v", "<F6>", "<CMD>Huefy<CR>", "Open color picker")
+
 -- F7: no highlight
 remap("n", "<F7>", ":nohlsearch<CR>", "No highlight")
 remap("i", "<F7>", "<ESC>:nohlsearch<CR>a", "No highlight")

@@ -205,4 +205,18 @@ return {
       vim.g.vimwiki_global_ext = 0
     end,
   },
+
+  -- Color picker
+  {
+    "nvzone/volt",
+    enable = false,
+    lazy = true,
+  },
+
+  {
+    "nvzone/minty",
+    enable = false,
+    lazy = false,
+    cmd = { "Shades", "Huefy" },
+  },
 }
