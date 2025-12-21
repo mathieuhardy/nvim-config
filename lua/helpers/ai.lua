@@ -1,4 +1,24 @@
+function get_current_suggestions_backend()
+  if global_opts.ai.suggestions_backend ~= nil and global_opts.ai.suggestions_backend ~= "" then
+    return global_opts.ai.suggestions_backend
+  else
+    return "-"
+  end
+end
+
+function toggle_ai_suggestions_backend()
+  if global_opts.ai.suggestions_backend == nil or global_opts.ai.suggestions_backend == "" then
+    select_ai_suggestions_backend("codeium")
+  elseif global_opts.ai.suggestions_backend == "codeium" then
+    select_ai_suggestions_backend("copilot")
+  else
+    select_ai_suggestions_backend("")
+  end
+end
+
 function select_ai_suggestions_backend(backend)
+  global_opts.ai.suggestions_backend = backend
+
   set_codeium_status(backend == "codeium")
   set_copilot_status(backend == "copilot")
 

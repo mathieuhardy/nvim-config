@@ -23,9 +23,19 @@ return {
         lualine_a = { "mode" },
         lualine_b = {},
         lualine_c = { "filename" },
-        lualine_x = { "encoding", "fileformat", "filetype" },
-        lualine_y = {},
-        lualine_z = { "location" },
+        lualine_x = { "diagnostics", { "lsp_status", color = { fg = "#272727", bg = "#C9E3CC" } } },
+        lualine_y = {
+          {
+            get_current_suggestions_backend,
+            color = { fg = "#272727", bg = "#ffb86a" },
+            on_click = toggle_ai_suggestions_backend,
+          },
+        },
+        lualine_z = {
+          "encoding",
+          "filetype",
+          "location",
+        },
       },
     },
   },
