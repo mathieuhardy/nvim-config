@@ -28,6 +28,7 @@ Ctrl-<Space>        : open completion menu
 Ctrl-b              : git blame
 Ctrl-d              : delete hidden buffers
 Ctrl-o              : sort lines
+Ctrl-p              : open command menu
 Ctrl-t              : open floating terminal
 
 # F-keys
@@ -35,7 +36,7 @@ F1                  : save buffer
 F2                  : close buffer
 F3                  : horizontal split
 F4                  : vertical split
-F5                  : N.A.
+F5                  : toggle inlay hints
 F6                  : N.A.
 F7                  : clear highlight
 F8                  : N.A.

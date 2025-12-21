@@ -88,15 +88,6 @@ remap("n", "-", "<Plug>nextvalDec", "Increment/descrement")
 remap("n", "+", "<Plug>nextvalInc", "Increment/descrement")
 
 --------------------------------------------------------------------------------
--- Interface
---------------------------------------------------------------------------------
-
--- ctrl-i: toggle inlay hints
-remap("n", "<C-i>", "<CMD>lua toggle_inlay_hints()<CR>", "Toggle inlay hints")
-remap("i", "<C-i>", "<ESC><CMD>lua toggle_inlay_hints()<CR>a", "Toggle inlay hints")
-remap("v", "<C-i>", "<CMD>lua toggle_inlay_hints()<CR>", "Toggle inlay hints")
-
---------------------------------------------------------------------------------
 -- Search
 --------------------------------------------------------------------------------
 
@@ -161,6 +152,11 @@ remap("v", "<F3>", "<ESC>:split<CR>", "Horizontal split")
 remap("n", "<F4>", ":vsplit<CR>", "Vertical split")
 remap("i", "<F4>", "<ESC>:vsplit<CR>a", "Vertical split")
 remap("v", "<F4>", "<ESC>:vsplit<CR>", "Vertical split")
+
+-- F5: toggle inlay hints
+remap("n", "<F5>", "<CMD>lua toggle_inlay_hints()<CR>", "Toggle inlay hints")
+remap("i", "<F5>", "<ESC><CMD>lua toggle_inlay_hints()<CR>a", "Toggle inlay hints")
+remap("v", "<F5>", "<CMD>lua toggle_inlay_hints()<CR>", "Toggle inlay hints")
 
 -- F7: no highlight
 remap("n", "<F7>", ":nohlsearch<CR>", "No highlight")
