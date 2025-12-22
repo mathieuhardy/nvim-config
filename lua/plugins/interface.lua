@@ -23,7 +23,7 @@ return {
         lualine_a = { "mode" },
         lualine_b = {},
         lualine_c = { "filename" },
-        lualine_x = { "diagnostics", { "lsp_status", color = { fg = "#272727", bg = "#C9E3CC" } } },
+        lualine_x = { "diagnostics", { "lsp_status", color = { fg = "#272727", bg = "#87af87" } } },
         lualine_y = {
           {
             get_current_suggestions_backend,
