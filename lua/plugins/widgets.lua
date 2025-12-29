@@ -18,6 +18,9 @@ return {
           "buffers",
         },
         filesystem = {
+          follow_current_file = {
+            enabled = false,
+          },
           filtered_items = {
             visible = true,
           },
