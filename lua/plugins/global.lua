@@ -44,6 +44,7 @@ return {
           "markdown",
           "markdown_inline",
           "mustache",
+          "nix",
           "proto",
           "python",
           "regex",
@@ -85,6 +86,7 @@ return {
       require("mason-tool-installer").setup({
         ensure_installed = {
           -- Formaters
+          "beautysh",
           "black",
           "isort",
           "nixfmt",

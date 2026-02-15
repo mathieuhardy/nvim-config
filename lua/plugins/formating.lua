@@ -18,6 +18,7 @@ return {
       -- Setup
       require("conform").setup({
         formatters_by_ft = {
+          bash = { "beautysh" },
           lua = { "stylua" },
           nix = { "nixfmt" },
           python = { "isort", "black" },
