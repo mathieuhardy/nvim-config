@@ -1,5 +1,5 @@
 default_opts = {
-  auto_format = { "*.c", "*.cpp", "*.h", "*.hpp", "*.lua", "*.py", "*.rs", "*.toml" },
+  auto_format = { "*.c", "*.cpp", "*.h", "*.hpp", "*.lua", "*.nix", "*.py", "*.rs", "*.toml" },
   history = 1000,
   default_max_length = 80,
   leader = ",",
@@ -15,6 +15,7 @@ default_opts = {
     "*.html",
     "*.js",
     "*.lua",
+    "*.nix",
     "*.py",
     "*.rs",
     "*.sql",

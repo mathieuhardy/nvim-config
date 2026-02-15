@@ -87,6 +87,7 @@ return {
           -- Formaters
           "black",
           "isort",
+          "nixfmt",
           "stylua",
           -- Debugger
           "codelldb",
