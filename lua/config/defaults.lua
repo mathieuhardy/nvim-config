@@ -41,6 +41,7 @@ default_opts = {
     h = 4,
     hpp = 4,
     lua = 2,
+    nix = 2,
     python = 4,
     rust = 4,
     toml = 4,
