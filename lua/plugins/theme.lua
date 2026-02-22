@@ -10,4 +10,17 @@ return {
       vim.cmd.colorscheme("sonokai")
     end,
   },
+
+  {
+    "catppuccin/nvim",
+    enabled = false,
+    name = "catppuccin",
+    init = function()
+      require("catppuccin").setup({
+        flavour = "mocha", -- latte, frappe, macchiato, mocha
+      })
+
+      vim.cmd.colorscheme("catppuccin")
+    end,
+  },
 }
